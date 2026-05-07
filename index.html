@@ -19,7 +19,6 @@
             color: #1e293b;
         }
 
-        /* Hero section */
         .hero {
             background: linear-gradient(135deg, #0f172a, #1e3a8a);
             color: white;
@@ -38,31 +37,31 @@
             opacity: 0.9;
         }
 
-        /* Section title */
         .section-title {
             font-weight: 700;
             margin-bottom: 25px;
             color: #1e3a8a;
         }
 
-        /* Cards */
         .custom-card {
             border: none;
             border-radius: 20px;
             overflow: hidden;
             background: white;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: transform 0.2s ease;
+            transition: all 0.25s ease;
             margin-bottom: 30px;
+            height: 100%;
         }
 
         .custom-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-6px);
+            box-shadow: 0 8px 28px rgba(0,0,0,0.15);
         }
 
         .custom-card img {
             width: 100%;
-            height: 250px;
+            height: 260px;
             object-fit: cover;
         }
 
@@ -70,13 +69,11 @@
             padding: 20px;
         }
 
-        /* About text */
         .about-text {
             font-size: 1.1rem;
             line-height: 1.8;
         }
 
-        /* Footer */
         footer {
             margin-top: 60px;
             background: #0f172a;
@@ -86,12 +83,12 @@
         }
 
         a {
-            color: #2563eb;
             text-decoration: none;
+            color: inherit;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .clickable-card {
+            cursor: pointer;
         }
 
     </style>
@@ -127,24 +124,18 @@
                         My research organisms include
                         <em>Drosophila</em> and <em>Aedes</em>.
                     </p>
-
-                    <p class="about-text">
-                        Lab website:
-                        <a href="https://jchamper.github.io/" target="_blank">
-                            https://jchamper.github.io/
-                        </a>
-                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Research Images -->
+        <!-- Research -->
         <section class="mb-5">
             <h2 class="section-title">Research</h2>
 
             <div class="row">
 
-                <div class="col-md-6">
+                <!-- Aedes -->
+                <div class="col-md-4">
                     <div class="custom-card">
                         <img src="aedes.png" alt="Aedes mosquito">
                         <div class="card-body">
@@ -154,26 +145,43 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="custom-card">
-                        <img src="lab.png" alt="Lab">
-                        <div class="card-body">
-                            <h5>Champer Lab</h5>
-                            <p>Research on CRISPR-based gene drive systems.</p>
+                <!-- Drosophila -->
+                <div class="col-md-4">
+                    <a href="drosophila.html">
+                        <div class="custom-card clickable-card">
+                            <img src="fly.jpeg" alt="Drosophila">
+                            <div class="card-body">
+                                <h5>Drosophila</h5>
+                                <p>Gene drives in model organism.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+
+                <!-- Champer Lab -->
+                <div class="col-md-4">
+                    <a href="https://jchamper.github.io/" target="_blank">
+                        <div class="custom-card clickable-card">
+                            <img src="lab.png" alt="Lab">
+                            <div class="card-body">
+                                <h5>Champer Lab</h5>
+                                <p>Research on CRISPR-based gene drive systems.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
             </div>
         </section>
 
-        <!-- Personal -->
+        <!-- Personal Life -->
         <section class="mb-5">
             <h2 class="section-title">Personal Life</h2>
 
             <div class="row">
 
-                <div class="col-md-6">
+                <!-- Ginger -->
+                <div class="col-md-4">
                     <div class="custom-card">
                         <img src="ginger.png" alt="Friend">
                         <div class="card-body">
@@ -183,12 +191,24 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <!-- Cello -->
+                <div class="col-md-4">
                     <div class="custom-card">
-                        <img src="mold.png" alt="Pet">
+                        <img src="cello.png" alt="Cello">
                         <div class="card-body">
-                            <h5>My Current Pet</h5>
-                            <p>Unexpected but fascinating.</p>
+                            <h5>Cello</h5>
+                            <p>What I am passionate about.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gecko -->
+                <div class="col-md-4">
+                    <div class="custom-card">
+                        <img src="yellow.jpg" alt="Crested Gecko">
+                        <div class="card-body">
+                            <h5>My New Friend</h5>
+                            <p>Crested gecko (Correlophus ciliatus).</p>
                         </div>
                     </div>
                 </div>
